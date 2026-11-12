@@ -339,7 +339,11 @@ body::after {
 .submit-btn:active { transform: translateY(0); }
 .submit-btn span { position: relative; z-index: 2; }
 
-.success-state { display: none; text-align: center; padding: 3rem 0; }
+
+.ticket-note { color: var(--white); font-size: 0.9rem; line-height: 1.7; text-align: center; margin-top: 1.5rem; }
+.ticket-btn { text-align: center; text-decoration: none; }
+.ticket-availability { color: var(--cream); font-size: 0.75rem; letter-spacing: 0.08em; text-align: center; margin-top: 1rem; }
+
 .success-state h3 { font-size: 1.4rem; font-weight: 400; margin-bottom: 0.8rem; color: var(--cream); }
 .success-state p { color: var(--white); font-size: 0.85rem; }
 .success-state h3.sold-out { color: #e0303d; font-weight: 700; font-size: 1.6rem; text-transform: uppercase; letter-spacing: 0.03em; }
@@ -546,7 +550,7 @@ body::after {
       <div class="divider"></div>
       <p class="section-label">The Details</p>
       <div class="details-grid">
-        <div class="detail-item"><h3>Saturday, 5 September 2026</h3></div>
+        <div class="detail-item"><h3>Saturday, 5 December 2026</h3></div>
         <div class="detail-item"><h3>Good Music</h3><p>Rooted in rhythm. But made for your feelings.</p></div>
         <div class="detail-item"><h3>Outdoor Picnic &amp; Games</h3><p>Your vibe. Our sound. Sunlight to play in.</p></div>
       </div>
@@ -560,17 +564,12 @@ body::after {
     <div class="desktop-content-layer" id="dLayerRsvp">
       <div class="rsvp-container" style="max-height:85vh;overflow-y:auto;padding:1rem;">
         <div class="divider"></div>
-        <h2>RSVP</h2>
-        <p class="section-sub">Drop your details below, and we'll save you a patch of green.</p>
-        <form id="rsvpFormDesktop">
-          <div class="form-row"><div class="form-field"><label>Name *</label><input type="text" name="name" placeholder="Your Name" required="" class="capitalize"><span class="error-msg" id="dNameError">Name is required</span></div><div class="form-field"><label>Surname *</label><input type="text" name="surname" placeholder="Your Surname" required="" class="capitalize"><span class="error-msg" id="dSurnameError">Surname is required</span></div></div>
-          <div class="form-field"><label>Email *</label><input type="email" name="email" placeholder="name@email.com" required=""><span class="error-msg" id="dEmailError">Please enter a valid email address</span></div>
-          <div class="form-field games-dropdown"><label>Pick Your Games <span style="font-weight:300;opacity:0.7;">(optional)</span></label><select id="dGamesSelect"><option value="" disabled selected>Choose a game...</option><option value="Chess">Chess</option><option value="Giant Jenga">Giant Jenga</option><option value="Dominoes">Dominoes</option><option value="Card Games">Card Games</option><option value="30 Seconds">30 Seconds</option></select><div class="selected-games" id="dSelectedGames"></div><input type="hidden" name="games" id="dGamesHidden"></div>
-          
-          <button type="submit" class="submit-btn"><span>Let's Go!</span></button>
-        </form>
-        <div class="success-state" id="dSuccessState"><h3 class="sold-out">This event is now full.</h3><p>We are no longer accepting RSVPs for Shoulder Music Sessions. Thank you for your interest, and keep an eye out for the next one.</p></div>
-        <div class="site-footer"><a href="https://www.instagram.com/shouldermusicsessions/" target="_blank">Instagram</a><a href="https://www.tiktok.com/@shouldermusicsessions" target="_blank">TikTok</a><a href="mailto:shouldermusicsessions@gmail.com">Contact Us</a><p>Shoulder Music Sessions © 2025</p></div>
+        <h2>Tickets</h2>
+        <p class="section-sub">Saturday, 5 December 2026 · 12:00 to 22:00<br>60 Dane St, Glen Austin, Midrand<br>R150 per person</p>
+        <p class="ticket-note">Secure your place through Quicket. Your booking is confirmed once you receive your ticket.</p>
+        <a class="submit-btn ticket-btn" href="https://www.quicket.co.za/events/407098-shoulder-music-sessions/#/"><span>Get Your Ticket</span></a>
+        <p class="ticket-availability">Spaces are limited.</p>
+        <div class="site-footer"><a href="https://www.instagram.com/shouldermusicsessions/" target="_blank">Instagram</a><a href="https://www.tiktok.com/@shouldermusicsessions" target="_blank">TikTok</a><a href="mailto:shouldermusicsessions@gmail.com">Contact Us</a><p>Shoulder Music Sessions © 2026</p></div>
       </div>
     </div>
   </div>
@@ -592,7 +591,7 @@ body::after {
     <div class="divider"></div>
     <p class="section-label">The Details</p>
     <div class="details-grid">
-      <div class="detail-item stagger-1"><h3>Saturday, 5 September 2026</h3></div>
+      <div class="detail-item stagger-1"><h3>Saturday, 5 December 2026</h3></div>
       <div class="detail-item stagger-2"><h3>Good Music</h3><p>Rooted in rhythm. But made for your feelings.</p></div>
       <div class="detail-item stagger-3"><h3>Outdoor Picnic &amp; Games</h3><p>Your vibe. Our sound. Sunlight to play in.</p></div>
     </div>
@@ -607,23 +606,18 @@ body::after {
 
   <section style="padding:clamp(3rem,6vw,5rem) 1.5rem;max-width:500px;margin:0 auto;" class="reveal">
     <div class="divider"></div>
-    <h2 style="font-size:1.4rem;font-weight:400;text-align:center;margin-bottom:0.5rem;">RSVP</h2>
-    <p class="section-sub">Drop your details below, and we'll save you a patch of green.</p>
-    <form id="rsvpFormMobile">
-      <div class="form-row"><div class="form-field"><label>Name *</label><input type="text" name="name" placeholder="Your Name" required="" class="capitalize"><span class="error-msg" id="mNameError">Name is required</span></div><div class="form-field"><label>Surname *</label><input type="text" name="surname" placeholder="Your Surname" required="" class="capitalize"><span class="error-msg" id="mSurnameError">Surname is required</span></div></div>
-      <div class="form-field"><label>Email *</label><input type="email" name="email" placeholder="name@email.com" required=""><span class="error-msg" id="mEmailError">Please enter a valid email address</span></div>
-      <div class="form-field games-dropdown"><label>Pick Your Games <span style="font-weight:300;opacity:0.7;">(optional)</span></label><div class="games-chips" id="mGamesChips"><button type="button" class="game-chip" data-game="Chess">Chess</button><button type="button" class="game-chip" data-game="Giant Jenga">Giant Jenga</button><button type="button" class="game-chip" data-game="Dominoes">Dominoes</button><button type="button" class="game-chip" data-game="Card Games">Card Games</button><button type="button" class="game-chip" data-game="30 Seconds">30 Seconds</button></div><input type="hidden" name="games" id="mGamesHidden"></div>
-      
-      <button type="submit" class="submit-btn"><span>Let's Go!</span></button>
-    </form>
-    <div class="success-state" id="mSuccessState"><h3 class="sold-out">This event is now full.</h3><p>We are no longer accepting RSVPs for Shoulder Music Sessions. Thank you for your interest, and keep an eye out for the next one.</p></div>
+    <h2 style="font-size:1.4rem;font-weight:400;text-align:center;margin-bottom:0.5rem;">Tickets</h2>
+    <p class="section-sub">Saturday, 5 December 2026 · 12:00 to 22:00<br>60 Dane St, Glen Austin, Midrand<br>R150 per person</p>
+    <p class="ticket-note">Secure your place through Quicket. Your booking is confirmed once you receive your ticket.</p>
+    <a class="submit-btn ticket-btn" href="https://www.quicket.co.za/events/407098-shoulder-music-sessions/#/"><span>Get Your Ticket</span></a>
+    <p class="ticket-availability">Spaces are limited.</p>
   </section>
 
   <div class="site-footer">
     <a href="https://www.instagram.com/shouldermusicsessions/" target="_blank">Instagram</a>
     <a href="https://www.tiktok.com/@shouldermusicsessions" target="_blank">TikTok</a>
     <a href="mailto:shouldermusicsessions@gmail.com">Contact Us</a>
-    <p>Shoulder Music Sessions © 2025</p>
+    <p>Shoulder Music Sessions © 2026</p>
   </div>
 </div><!-- /.mobile-flow -->
 
@@ -789,59 +783,6 @@ initGamesDropdown('dGamesSelect', 'dSelectedGames', 'dGamesHidden');
 })();
 
 // ===== FORM VALIDATION =====
-function setupForm(formId, nameErrId, surnameErrId, emailErrId, successId) {
-  const form = document.getElementById(formId);
-  if (!form) return;
-  form.addEventListener('submit', (e) => {
-    e.preventDefault();
-    const n = form.querySelector('[name="name"]');
-    const s = form.querySelector('[name="surname"]');
-    const em = form.querySelector('[name="email"]');
-    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    let valid = true;
-    [n, s, em].forEach(el => el.classList.remove('error'));
-    document.querySelectorAll('.error-msg').forEach(m => m.classList.remove('visible'));
-    if (!n.value.trim()) { n.classList.add('error'); document.getElementById(nameErrId).classList.add('visible'); valid = false; }
-    if (!s.value.trim()) { s.classList.add('error'); document.getElementById(surnameErrId).classList.add('visible'); valid = false; }
-    if (!em.value.trim()) { em.classList.add('error'); const el = document.getElementById(emailErrId); el.textContent = 'Email is required'; el.classList.add('visible'); valid = false; }
-    else if (!regex.test(em.value.trim())) { em.classList.add('error'); const el = document.getElementById(emailErrId); el.textContent = 'Please enter a valid email address'; el.classList.add('visible'); valid = false; }
-    if (!valid) { const first = form.querySelector('.error'); if (first) first.focus(); return; }
-    const fd = new FormData(form);
-    const data = Object.fromEntries(fd.entries());
-    // Ensure games field is captured from selected tags
-    const gamesContainer = form.querySelector('.selected-games');
-    if (gamesContainer) {
-      const tags = gamesContainer.querySelectorAll('.game-tag');
-      const gamesList = [];
-      tags.forEach(tag => {
-        const text = tag.childNodes[0].textContent.trim();
-        if (text) gamesList.push(text);
-      });
-      data.games = gamesList.join(', ');
-    }
-    const btn = form.querySelector('.submit-btn');
-    btn.disabled = true;
-    btn.querySelector('span').textContent = 'Sending...';
-
-    fetch('https://script.google.com/macros/s/AKfycbzwMeYTZSYAThOmxDgYT6SDIYyHCJ-ope9lfY9U7mNIXuFHRdN4Yt5ZtGBqAYPX0O6g_w/exec', {
-      method: 'POST',
-      mode: 'no-cors',
-      headers: { 'Content-Type': 'text/plain' },
-      body: JSON.stringify(data)
-    })
-    .then(() => {
-      form.style.display = 'none';
-      document.getElementById(successId).style.display = 'block';
-    })
-    .catch(() => {
-      form.style.display = 'none';
-      document.getElementById(successId).style.display = 'block';
-    });
-  });
-}
-
-setupForm('rsvpFormDesktop', 'dNameError', 'dSurnameError', 'dEmailError', 'dSuccessState');
-setupForm('rsvpFormMobile', 'mNameError', 'mSurnameError', 'mEmailError', 'mSuccessState');
 </script>
 
 </body></html>
