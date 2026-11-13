@@ -391,6 +391,7 @@ body::after {
   color: var(--white); text-decoration: none; font-size: 0.7rem;
   letter-spacing: 0.15em; text-transform: uppercase;
   margin: 0 1rem; transition: color 0.3s ease;
+  white-space: nowrap;
 }
 .site-footer a:hover { color: var(--off-white); }
 .site-footer p { font-size: 0.65rem; color: var(--white); margin-top: 1rem; letter-spacing: 0.1em; }
@@ -437,6 +438,8 @@ body::after {
 
 @media (max-width: 400px) {
   .mobile-flow .vinyl-wrapper { width: 240px; height: 240px; }
+  .site-footer { padding-left: 0.75rem; padding-right: 0.75rem; }
+  .site-footer a { font-size: 0.58rem; letter-spacing: 0.12em; margin: 0 0.55rem; }
 }
 
 @media (hover: none) {
